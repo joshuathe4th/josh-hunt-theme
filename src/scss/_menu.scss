@@ -1,0 +1,108 @@
+header {
+	max-width: 95vw;
+	margin: 0 auto 1rem auto;
+
+
+/* Navigation */
+.wp-block-navigation {
+	height: 4rem;
+	font-weight: bold;
+	color: #fff;
+	z-index: 1;
+
+}
+/* Mobile nav */
+@media (max-width:700px) {
+	.header-navigation > div{
+		display: block!important;
+
+		text-align: center!important;
+	}
+	.header-navigation > div > div {
+		justify-content: center;
+	}
+	.wp-block-navigation {
+		margin-top: 1rem;	
+		width:100%;
+	}
+	.wp-block-navigation ul div{
+		flex-grow: 1;	
+	}
+}
+
+.wp-block-navigation__container {
+	gap: 0!important;
+}
+.wp-block-navigation-item {
+	border-radius: 25px;
+	align-items: initial!important;
+	transition: transform 0.25s ease-in-out;
+}
+.wp-block-navigation-item:hover {
+	transform: translateY(.5rem)
+}
+.wp-block-navigation-item:active {
+	transform: translateY(.8rem)
+}
+
+.wp-block-navigation-item__content {
+	display: block;
+	border: solid $borderWidth #fff;
+	padding: 0.8em!important;
+	border-radius: 25px;
+	height: calc(8rem + 16px);
+	width:100%;
+	text-align: center;
+	background-color: var(--wp--preset--color--theme-black);
+	text-decoration: none!important;
+	box-sizing: border-box;
+}
+
+
+@media (min-width:600px) {
+.wp-block-navigation-item.current-menu-item .wp-block-navigation-item__content,
+.wp-block-navigation-item__content:hover{
+	background-color: transparent;
+	color: black!important;
+}
+}
+
+@media (max-width:600px) {
+.footer-nav {
+	display: none!important;
+}
+}
+.footer-nav .wp-block-navigation-item.current-menu-item .wp-block-navigation-item__content,
+.footer-nav .wp-block-navigation-item__content:hover{
+	background-color: transparent;
+	color: initial;
+}
+
+.footer-nav li {
+	transform: none!important
+}
+header svg {
+	width: 25vw;
+	max-width: 250px;
+}
+@media (max-width:600px) {
+
+	header svg {
+		width: 70%;
+	}
+
+}
+}
+
+
+//Footer 
+footer {
+	color: var(--page-color);
+	.wp-block-navigation-item__content {
+		background-color: var(--wp--preset--color--theme-black);
+		color: #fff;
+		&:hover {
+			color: inherit!important;
+		}
+	}
+}

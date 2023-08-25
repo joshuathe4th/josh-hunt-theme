@@ -1,0 +1,53 @@
+/*
+ * Remove Blue Outline On Nav - except for keyboard users
+ */
+ body:not(.user-is-tabbing) button:focus,
+ body:not(.user-is-tabbing) input:focus,
+ body:not(.user-is-tabbing) select:focus,
+ body:not(.user-is-tabbing) a:focus,
+ body:not(.user-is-tabbing) .wp-block-navigation__responsive-close,
+ body:not(.user-is-tabbing) textarea:focus {
+   outline: none; 
+ }
+ 
+
+
+
+// General Resets
+*, *::before, *::after {
+    box-sizing: border-box;
+   // margin: 0;
+}
+
+//Hide Content initially
+body.is-loading * {
+    visibility: hidden;
+}
+body.is-loading {
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 800ms; 
+   // position: relative;
+    &:before {
+      content: '';
+      //background-color: red;
+      content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 438 438.336'%3E%3Cg data-name='Group 33' transform='translate(-4314 -1619.664)'%3E%3Ccircle cx='219' cy='219' r='219' fill='%234e6aff' data-name='Ellipse 37' transform='translate(4314 1620)'/%3E%3Cpath fill='%23f7511b' d='M4532.948 2057.641c.215-.025-.189-437.834-.238-437.977 121.075 0 219.225 98.15 219.225 219.225s-97.912 218.752-218.987 218.752Z' data-name='Path 86'/%3E%3C/g%3E%3C/svg%3E");
+      position: absolute;
+      width:10vh;
+      height:10vh;
+      top: calc(50% - 5vh);
+      left: calc(50% - 5vh);
+      visibility: visible!important;
+      transform-origin: center center!important;
+      animation: rotate 1s linear infinite; 
+
+    }
+}
+@keyframes rotate{
+  to{ transform: rotate(360deg)}
+}
+
+
+.extra-small-text {
+  font-size: 10px!important;
+}

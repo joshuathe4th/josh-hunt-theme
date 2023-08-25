@@ -1,0 +1,31 @@
+{
+	"name": "loco-lenis",
+	"version": "0.0.1",
+	"description": "Theme developed by Josh Hunt for josh-hunt.com",
+	"author": "Joshua Hunt",
+	"license": "GPL-2.0-or-later",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"start": "wp-scripts start"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^26.4.0"
+	},
+	"dependencies": {
+		"@lottiefiles/lottie-js": "^0.4.2",
+		"@wordpress/hooks": "^3.37.0",
+		"gsap": "^3.11.5",
+		"locomotive-scroll": "^5.0.0-beta.8",
+		"lottie-web": "^5.12.2",
+		"matter-js": "^0.19.0",
+		"photoswipe": "^5.3.8",
+		"photoswipe-dynamic-caption-plugin": "^1.2.7",
+		"poly-decomp": "^0.3.0"
+	}
+}

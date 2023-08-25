@@ -1,0 +1,74 @@
+
+/** 
+* Form Styles
+*/
+
+
+label {
+	display: none;
+	margin: .5em 0;
+	textarea, select, input[type="text"], input[type="email"], input[type="search"], input[type="tel"], input[type="url"], input[type="password"], input[type="color"], input[type="file"], input[type="color"], input[type="number"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"] {
+		display: block;
+		width: 100%; // good?
+		}
+	}
+
+textarea, select, input[type="text"], input[type="email"], input[type="search"], input[type="tel"], input[type="url"], input[type="password"], input[type="color"], input[type="file"], input[type="color"], input[type="number"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"] {
+	margin: 0;
+	padding: .75em 1em .5em 1em;
+	border: $borderWidth solid ;
+	background-color: transparent;
+	font-family: inherit;
+	font-size: var(--wp--preset--font-size--small);
+	width: 100%;
+	line-height: 1.25;
+	&::placeholder {
+		color: var(--wp--preset--color--theme-black);
+		opacity: 0.5;
+		overflow: visible;
+	}
+	}
+
+// Submit button
+.forminator-row-last .forminator-field {
+	text-align: right;
+	button {
+		//@extend .pill;
+		border-radius: 20px!important;
+		border: none;
+		background-color: var(--wp--preset--color--theme-black);
+		font-family: inherit;
+		font-size: var(--wp--preset--font-size--small);
+		padding: 1em;
+		color: white;
+		cursor: pointer;
+		&:hover {
+			background-color: var(--wp--preset--color--theme-white);
+			color: var(--wp--preset--color--theme-black);
+		}
+	}
+}
+.forminator-description {
+	display: none;
+}
+.forminator-row {
+	margin-bottom: 1rem !important;
+}
+.forminator-field > input {
+	margin-bottom: 0.5rem;
+}
+.forminator-field.forminator-has_error input {
+	border-color: var(--wp--preset--color--theme-red)!important;
+}
+
+// Error Message
+.forminator-error-message {
+	color: var(--wp--preset--color--theme-black);
+	background-color: var(--wp--preset--color--theme-red);
+	position: relative;
+	padding: 0.25rem 1rem;
+	border-radius: 300px;
+	margin-top: 10rem!important;
+	font-size: 16px;
+
+}

@@ -1,0 +1,241 @@
+/**
+ * The following styles get applied on the front of the site
+ * 
+ *
+ */
+
+$borderWidth: 8px;
+
+@import 'defaults.scss';
+@import 'menu.scss';
+@import 'portfolio.scss';
+@import 'form-styles.scss';
+//@import 'pattern-cover-1.scss';
+//@import 'pattern-cover-2.scss';
+//@import 'pattern-cover-3.scss';
+@import url('https://use.typekit.net/rxx6vpq.css');
+
+
+body {
+    background-color: var(--wp--preset--color--theme-black);
+}
+
+.site-logo {
+	max-width: 250px;
+	* {
+	fill: var(--page-color);
+	}
+}
+
+.main > div, .woocommerce-page main {
+	background-color:  var(--page-color);
+	z-index: 2;
+	border-radius: 25px;
+	padding: 2vw 0;
+	min-height: 80vh;
+    max-width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main, .woocommerce-page main {
+	z-index: 10;
+	position: relative;
+	display: block;
+}
+
+
+
+
+
+// Home Page Meet Josh Hunt
+.h-scroll {
+	transform: translateX(calc(var(--progress) * 10vw))!important;
+}
+.h-scroll--negative {
+	transform: translateX(calc(var(--progress) * -10vw))!important;
+}
+.meet-josh {
+	text-align: center;
+	position: relative;
+	.h-scroll, .h-scroll--negative {
+		display: inline-block;
+	}
+}
+
+
+.profile {
+	-webkit-clip-path: circle(45%);
+			clip-path: circle(45%);
+	background-color: var(--wp--preset--color--theme-blue);
+	position: absolute;
+	width: 100%;
+	vertical-align: middle;
+	max-width: 300px;
+	display: flex;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	top: 50%;
+  }
+  
+  .profile:after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+  }
+  
+  .profile img {
+  width: 100%!important;
+  position: absolute;
+  }
+
+
+//Button
+  .wp-element-button {
+	background: transparent;
+	border: $borderWidth solid currentColor;
+	color: var(--wp--preset--color--theme-black);
+	border-radius: 20px!important;
+	padding: 20px!important;
+	white-space: nowrap; 
+	&:hover {
+		background: var(--wp--preset--color--theme-white);
+	}
+	&.has-theme-white-color {
+		&:hover {
+			background: var(--wp--preset--color--theme-black);
+		}
+	}
+  }
+
+
+
+
+  .pill {
+	color: var(--wp--preset--color--theme-white) !important;
+	border: none!important;
+  }
+  .pill.black {
+	background: var(--wp--preset--color--theme-black) !important;
+  }
+
+  .pill.red {
+	background: var(--wp--preset--color--theme-red)  !important;
+	//color: #fff;
+  }
+
+  .pill.blue {
+	background: var(--wp--preset--color--theme-blue) !important;
+	//color: #fff;
+  }
+
+  .pill.yellow {
+	background: var(--wp--preset--color--theme-yellow) !important;
+	//color: #fff;
+  }
+
+
+
+
+  #skillz{
+	margin: 1em; 
+	box-sizing: content-box;
+	height: 100%;
+	min-height: 60vh;
+	max-width: 95%;
+	border-radius: 40px;
+	overflow: hidden;
+	border: $borderWidth solid  var(--wp--preset--color--theme-black);
+	background: var(--wp--preset--color--theme-blue);
+	
+  }
+
+  #skillz ul {
+	font-size: 24px;
+	@media (max-width: 699px) {
+		font-size: 14px;
+	}
+	list-style: none;
+	user-select: none;
+	position: relative!important;
+	display: flex;
+	//gap: 30px;
+	flex-wrap: wrap;
+  }
+  #skillz li, .pill {
+	background: var(--wp--preset--color--theme-red);
+	border: $borderWidth solid var(--wp--preset--color--theme-white);
+	color: #fff;
+	//color: var(--wp--preset--color--theme-black);
+	border-radius: 20px;
+	display: inline-block;
+	padding: 1em;
+	cursor: move;
+	white-space: nowrap; 
+	box-sizing: content-box!important;
+  } 
+  #skillz li {
+	opacity: 0;
+  }
+  #skillz li:hover {
+	background:var(--wp--preset--color--theme-yellow);
+	border-color: var(--wp--preset--color--theme-black);
+	color: var(--wp--preset--color--theme-black);
+  }
+
+
+
+
+
+
+  #services{
+	margin: 1em; 
+	box-sizing: content-box;
+	height: 100%;
+	min-height: 60vh;
+	max-width: 95%;
+	border-radius: 40px;
+	overflow: hidden;
+	border: $borderWidth solid  var(--wp--preset--color--theme-black);
+	background: var(--wp--preset--color--theme-blue);
+	
+  }
+	.flex {
+		position: relative!important;
+
+	}
+
+  .circle {
+	/* code to make the content positioned relative to this element */
+	position: relative;
+	background-color: var(--wp--preset--color--theme-yellow);
+	border-radius: 50%;
+	display: inline-block;
+	border: $borderWidth solid black;
+	.square {
+		width: 0px;
+		height: 0px;
+		padding-top: 100%;
+		padding-right: 100%;
+	}
+	.content {
+		height: 0px;
+	}
+
+	.content::after,
+	.content::before {
+		content: attr(data-label);
+	}
+	
+	.content::after {
+		position: absolute;
+		bottom: 50%;
+		right: 50%;
+		text-align: center;
+		transform: translate(50%, 50%);
+		padding: 2rem;
+	}
+	
+	.content::before {
+		color: transparent;
+	}
+}

@@ -1,0 +1,19 @@
+/*
+ * Button Styles
+ */
+
+.is-style-next-button .wp-block-button__link,
+.is-style-text-button .wp-block-button__link
+{
+    svg {
+        width: 1.5rem;
+        margin-left: 1rem;
+        transition: margin 0.25s ease;
+    }
+    &:hover {
+        svg {
+            margin-left: 1.75rem;
+        }
+    }
+
+}

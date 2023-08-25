@@ -1,0 +1,19 @@
+
+
+.image-text-block {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.icon-wrapper {
+    display: block;
+    position: relative;
+    svg {
+        display: block;
+        width: 100%;
+        * {
+           fill: currentColor;
+        }
+    }
+}
