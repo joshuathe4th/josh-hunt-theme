@@ -4,17 +4,23 @@
  *
  */
 
-$borderWidth: 8px;
+$borderWidth: 7px;
+$mobileBreakpoint: 716px;
 
 @import 'defaults.scss';
 @import 'menu.scss';
 @import 'portfolio.scss';
 @import 'form-styles.scss';
-//@import 'pattern-cover-1.scss';
-//@import 'pattern-cover-2.scss';
-//@import 'pattern-cover-3.scss';
+@import 'cursor.scss';
+
 @import url('https://use.typekit.net/rxx6vpq.css');
 
+.hide-for-mobile {
+//	display: none;
+	@media (max-width: $mobileBreakpoint) {
+		display: none!important;
+	}
+}
 
 body {
     background-color: var(--wp--preset--color--theme-black);
@@ -31,7 +37,7 @@ body {
 	background-color:  var(--page-color);
 	z-index: 2;
 	border-radius: 25px;
-	padding: 2vw 0;
+	padding: 5vw;
 	min-height: 80vh;
     max-width: 95vw;
     margin-left: auto;
@@ -42,6 +48,7 @@ body {
 	position: relative;
 	display: block;
 }
+
 
 
 
@@ -151,7 +158,7 @@ body {
 
   #skillz ul {
 	font-size: 24px;
-	@media (max-width: 699px) {
+	@media (max-width: $mobileBreakpoint) {
 		font-size: 14px;
 	}
 	list-style: none;
@@ -165,11 +172,9 @@ body {
 	background: var(--wp--preset--color--theme-red);
 	border: $borderWidth solid var(--wp--preset--color--theme-white);
 	color: #fff;
-	//color: var(--wp--preset--color--theme-black);
 	border-radius: 20px;
 	display: inline-block;
 	padding: 1em;
-	cursor: move;
 	white-space: nowrap; 
 	box-sizing: content-box!important;
   } 

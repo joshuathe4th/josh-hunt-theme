@@ -45,7 +45,7 @@ function setNavColors($) {
 
       if(evt.target.id === 'close') {
      //  console.log('close')
-       console.log(this);
+      // console.log(this);
        this.innerHTML = btnText;
      }
 

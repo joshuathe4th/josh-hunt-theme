@@ -27,7 +27,7 @@ add_action( 'wp_enqueue_scripts', function(){
 add_action( 'admin_enqueue_scripts', function(){
 	wp_enqueue_script( 'EditorJS', get_template_directory_uri() . '/build/editor.js', array('lodash'), wp_get_theme()->get( 'Version' ), true );
 	//wp_enqueue_script( 'HideOnMobile', get_template_directory_uri() . '/src/js/hide-on-mobile.js', array( 'wp-blocks', 'wp-element', 'wp-i18n', 'wp-data', 'wp-components', 'wp-block-editor' ), wp_get_theme()->get( 'Version' ), true );
-	wp_enqueue_style( 'EditorCSS', get_template_directory_uri() . '/build/editor.css', array('lodash'), wp_get_theme()->get( 'Version' ), false);
+	wp_enqueue_style( 'EditorCSS', get_template_directory_uri() . '/build/editor.css', '', wp_get_theme()->get( 'Version' ), false);
 } );
 
 // Animation Filters

@@ -30,7 +30,7 @@
 								{
                     "name": "Text",
                     "slug": "theme-blue",
-                    "color": "lch(48% 87 289.633)"
+                    "color": "lch(51% 87 289.633)"
                 },
 				{
 					"name": "Off White",
@@ -75,36 +75,36 @@
 			],
 			"fontSizes": [
 				{
-					"size": "1.15rem",
+					"fluid": {
+						"min": "0.875rem",
+						"max": "1.15rem"
+					},
+					"size": "1.25rem",
+					"slug": "small"
+				},
+				{
 					"fluid": {
 						"min": "1rem",
-						"max": "1.25rem"
+						"max": "1.47rem"
 					},
-					"slug": "small" 
+					"size": "1.47rem",
+					"slug": "medium"
 				},
 				{
-					"size": "23px",
 					"fluid": {
-						"min": "18px",
-						"max": "23px"
-					},
-					"slug": "medium" 
-				},
-				{
-					"size": "2.1rem",
-					"fluid": {
-						"min": "1.75rem",
+						"min": "1.45rem",
 						"max": "2.1rem"
 					},
-					"slug": "large"
+					"size": "2.1rem",
+					"slug": "large" 
 				},
 				{
-					"size": "3rem",
 					"fluid": {
-						"min": "3rem",
-						"max": "6rem"
+						"min": "1.8rem",
+						"max": "3.69rem"
 					},
-					"slug": "x-large"
+					"size": "3.69rem",
+					"slug": "x-large" 
 				},
 				{
 					"fluid": {

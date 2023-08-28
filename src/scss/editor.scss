@@ -5,3 +5,20 @@
  */
 
 
+
+ // Admin Color Settings
+.status-publish {
+    background-color: #f0f4fc!important;
+    th,td {
+        margin-left: 1rem;
+        border-bottom:1px solid rgb(195, 196, 199);
+    }
+    .check-column {
+        border-left: 4px solid #72aee6;
+    }
+
+}
+
+.rank-math-column-display.rank-math-link-count  {
+    display: none!important;
+}

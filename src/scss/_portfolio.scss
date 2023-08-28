@@ -1,6 +1,3 @@
-
-
-
   /* - - - - - - - - - - - - - - - - - - - - 
   * Portfolio
   * - - - - - - - - - - - - - - - - - - - -  */ 
@@ -21,7 +18,7 @@
 	display: block;
 	color: var(--wp--preset--color--theme-white);
 	background-color: var(--wp--preset--color--theme-black);
-	cursor: pointer;
+	//cursor: pointer;
 	&:hover {
 		background-color: var(--color);
 	}
@@ -34,7 +31,7 @@
 	&.dark:hover, &.dark.open {
 		color: var(--wp--preset--color--theme-white);
 	}
-	&.light:hover, .light.open{
+	&.light:hover, &.light.open{
 		color: var(--wp--preset--color--theme-black);
 		
 	}
@@ -47,7 +44,7 @@
   
   .portfolio-img:hover {
 	//background-color: #000;
-	cursor: pointer;
+	//cursor: pointer;
   }
   .portfolio-type {
 	margin-left: -50vw!important;
@@ -117,7 +114,10 @@
 	display: flex;
 	margin: 2rem;
 	cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 65.577 65.577'%3E%3Cg data-name='Group 25' transform='translate(-260.939 -1150.058)'%3E%3Crect data-name='Rectangle 45' width='6' height='43' rx='3' transform='rotate(-45 1566.976 244.3)' fill='%23fff'/%3E%3Cpath data-name='Rectangle 45 - Outline' d='M288.331 1177.452a3 3 0 0 0 0 4.242l26.163 26.163a3 3 0 0 0 4.243-4.242l-26.163-26.163a3 3 0 0 0-4.243 0m-2.828-2.829a7.008 7.008 0 0 1 9.9 0l26.162 26.163a7 7 0 0 1-9.9 9.9l-26.162-26.163a7.008 7.008 0 0 1 0-9.9Z'/%3E%3Cpath data-name='Exclusion 1' d='M278.263 1167.383a16.5 16.5 0 0 1 23.334 0 16.5 16.5 0 0 1 0 23.334 16.5 16.5 0 0 1-23.334 0 16.5 16.5 0 0 1 0-23.334Z' fill='%23fff'/%3E%3Cpath data-name='Exclusion 1 - Outline' d='M278.263 1167.383a16.5 16.5 0 0 0 0 23.334 16.5 16.5 0 0 0 23.334 0 16.5 16.5 0 0 0 0-23.334 16.5 16.5 0 0 0-23.334 0m-2.829-2.829a20.376 20.376 0 0 1 6.784-4.502 20.423 20.423 0 0 1 7.713-1.502 20.427 20.427 0 0 1 7.712 1.502 20.379 20.379 0 0 1 6.783 4.503 20.379 20.379 0 0 1 4.504 6.783 20.427 20.427 0 0 1 1.501 7.713 20.423 20.423 0 0 1-1.501 7.712 20.376 20.376 0 0 1-4.503 6.784 20.374 20.374 0 0 1-6.783 4.502 20.424 20.424 0 0 1-7.713 1.502 20.427 20.427 0 0 1-7.712-1.502 20.371 20.371 0 0 1-6.784-4.502 20.371 20.371 0 0 1-4.503-6.784 20.427 20.427 0 0 1-1.501-7.713 20.424 20.424 0 0 1 1.501-7.712 20.374 20.374 0 0 1 4.502-6.784Z'/%3E%3Cg data-name='Group 21'%3E%3Cpath data-name='Line 7' d='M289.93 1188.55a2 2 0 0 1-2-2v-15a2 2 0 0 1 2-2 2 2 0 0 1 2 2v15a2 2 0 0 1-2 2Z'/%3E%3Cpath data-name='Line 8' d='M280.43 1179.05a2 2 0 0 1 2-2h15a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-15a2 2 0 0 1-2-2Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") 12 12, pointer !important;
-  }
+	@media (max-width: $mobileBreakpoint) {
+		margin: 0;
+	}
+}
   
   
   .portfolio-gallery img {

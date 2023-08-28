@@ -9,6 +9,11 @@ import LocomotiveScroll from 'locomotive-scroll';
 
 const ScrollLottie = (obj) => {
 
+  var isMobile = (window.innerWidth <= 800) ? true : false;
+  if (typeof obj.mobilePath !== 'undefined' && isMobile) {
+      obj.path = obj.mobilePath; 
+  }
+
   let anim = lottie.loadAnimation({
    container: document.querySelector(obj.target), 
    renderer: 'svg',
@@ -123,6 +128,7 @@ function jackScroll() {
     return ScrollLottie({
       target: '#jack',
       path: window.location.origin + "/wp-content/themes/josh-hunt/assets/images/animations/jack.json",
+      mobilePath:  window.location.origin + "/wp-content/themes/josh-hunt/assets/images/animations/jack-mobile.json",
       speed: 'medium',
       start: "top 60%", // when the ___ of the trigger hits the ___ of the viewport
       pin: false

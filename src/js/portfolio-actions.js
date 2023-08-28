@@ -26,9 +26,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
       // Assign dark or light mode to portfolio
       var color = getComputedStyle(item).getPropertyValue('--color');
-      console.log(color);
+      //console.log(color);
       var mode = lightOrDark(color);
-      console.log(mode)
+      //console.log(mode)
       item.classList.add(mode);
 
   })
@@ -85,7 +85,7 @@ function portfolio(item) {
         function openPortfolio(item) {
 
 
-         console.log( item.parentNode );
+        // console.log( item.parentNode );
 
          item.parentNode.classList.add('open');
          
@@ -122,7 +122,7 @@ for (i = 0; i < close.length; i++) {
       this.parentNode.classList.remove('open');
 
       this.nextElementSibling.classList.remove('open');
-      console.log(this.nextElementSibling);
+      //console.log(this.nextElementSibling);
      
       ScrollTrigger.refresh();  
     
