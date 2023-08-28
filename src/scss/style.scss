@@ -42,6 +42,7 @@ body {
     max-width: 95vw;
     margin-left: auto;
     margin-right: auto;
+	overflow: hidden;
 }
 .main, .woocommerce-page main {
 	z-index: 10;
@@ -56,11 +57,19 @@ body {
 
 // Home Page Meet Josh Hunt
 .h-scroll {
-	transform: translateX(calc(var(--progress) * 10vw))!important;
+	transform: translateX(calc(var(--progress) * 20vw))!important; 
+	@media (max-width: $mobileBreakpoint) {
+		transform: translateX(calc(var(--progress) * 60vw))!important; 
+	}
 }
 .h-scroll--negative {
-	transform: translateX(calc(var(--progress) * -10vw))!important;
+	transform: translateX(calc(var(--progress) * -20vw))!important; 
+	@media (max-width: $mobileBreakpoint) {
+		transform: translateX(calc(var(--progress) * -60vw))!important; 
+	}
 }
+
+
 .meet-josh {
 	text-align: center;
 	position: relative;
