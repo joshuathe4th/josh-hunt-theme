@@ -8,14 +8,11 @@
  */
 function create_block_gutenpride_block_init() {
 	//register_block_type( __DIR__ . '/build/block-scroll-text' );
-    //register_block_type( __DIR__ . '/build/block-icon-filter' );
-    //register_block_type( __DIR__ . '/build/block-2' );
-
 }
 add_action( 'init', 'create_block_gutenpride_block_init' );
 
 // Manage Updates
-//require_once get_template_directory() . '/updater.php';
+require_once get_template_directory() . '/updater.php';
 
 // Include Theme Files FRONTEND
 add_action( 'wp_enqueue_scripts', function(){
@@ -26,7 +23,6 @@ add_action( 'wp_enqueue_scripts', function(){
 // Include Theme Files ADMIN
 add_action( 'admin_enqueue_scripts', function(){
 	wp_enqueue_script( 'EditorJS', get_template_directory_uri() . '/build/editor.js', array('lodash'), wp_get_theme()->get( 'Version' ), true );
-	//wp_enqueue_script( 'HideOnMobile', get_template_directory_uri() . '/src/js/hide-on-mobile.js', array( 'wp-blocks', 'wp-element', 'wp-i18n', 'wp-data', 'wp-components', 'wp-block-editor' ), wp_get_theme()->get( 'Version' ), true );
 	wp_enqueue_style( 'EditorCSS', get_template_directory_uri() . '/build/editor.css', '', wp_get_theme()->get( 'Version' ), false);
 } );
 
@@ -130,7 +126,7 @@ function lottieJS() {
         
 	echo '<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.6/lottie.min.js"></script>';
 	echo '<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>';
-	echo '<script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>';
+	//echo '<script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>';
 	
 
 }
