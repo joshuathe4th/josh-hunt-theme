@@ -9,7 +9,7 @@ function automatic_GitHub_updates($data) {
     'theme_name'        => get_option('stylesheet'),
     'theme_template'    => get_stylesheet_directory(), // Folder name of the current theme
     'theme_uri'         => get_stylesheet_directory_uri(), // URL of the current theme folder
-    'theme_slug'        => 'xfd-theme',
+    'theme_slug'        => 'josh-hunt',
     'theme_dir'         => get_theme_root(), // Folder name of the theme root
   );
   $theme       = $theme_dtls['theme_name'];

@@ -1,5 +1,5 @@
 {
-	"name": "loco-lenis",
+	"name": "josh-hunt",
 	"version": "0.0.1",
 	"description": "Theme developed by Josh Hunt for josh-hunt.com",
 	"author": "Joshua Hunt",
@@ -25,7 +25,6 @@
 		"lottie-web": "^5.12.2",
 		"matter-js": "^0.19.0",
 		"photoswipe": "^5.3.8",
-		"photoswipe-dynamic-caption-plugin": "^1.2.7",
-		"poly-decomp": "^0.3.0"
+		"photoswipe-dynamic-caption-plugin": "^1.2.7"
 	}
 }
